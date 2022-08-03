@@ -16,4 +16,11 @@ public class Toyota extends  Car{
 
 
 
+    // this symbol means this is an overridden method(the upper arrow);
+    public void start(){
+        System.out.println("Twist the key to ignition to start "+brand+" "+model);
+    }
+
+
+
 }

@@ -12,10 +12,8 @@ public class Tesla extends Car{
     }
 
 
-    public void racing(){
-        System.out.println(brand+" "+model+" is racing");
+    @Override
+    public void start() {
+        System.out.println("Say \"Start\" to start "+brand+" "+model);
     }
-
-
-
 }
