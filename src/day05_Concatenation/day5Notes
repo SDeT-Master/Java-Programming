@@ -1,0 +1,22 @@
+
+Declare Vars:
+
+dataType Variable =data;
+
+primitives:
+
+int: for integers such as whole numbers
+
+double: for decimal numbers such 1.5, 3.000
+
+char : for single character such as M, N and should be within 'single quote'
+
+boolean: true/false statements  only
+
+
+Concatenation: +
+
+String+ data
+Data+string
+string+string
+
