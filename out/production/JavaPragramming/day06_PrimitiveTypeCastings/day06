@@ -1,0 +1,16 @@
+
+
+double>float>long>int>short>byte
+
+
+smaller primitive can be directly assigned to larger primitive type
+
+
+larger primitive types can not be directly assigned to smaller types (needs to be casted/done manually
+
+
+explicit casting is casting done manually
+
+
+
+option + enter to fix compile error in explicit casting
