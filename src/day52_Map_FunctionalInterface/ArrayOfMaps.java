@@ -1,10 +1,13 @@
 package day52_Map_FunctionalInterface;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.LinkedHashMap;
+import java.util.Map;
 
-public class ListOfMapPractice1 {
-
+public class ArrayOfMaps {
     public static void main(String[] args) {
+
 
         Map<String, String> scrumTeam1 = new LinkedHashMap<>();
         scrumTeam1.put("Abdulhamid","SM");
@@ -48,58 +51,16 @@ public class ListOfMapPractice1 {
         scrumTeam5.put("Adnan","QA");
 
 
-         LinkedHashMap<Integer,Integer> m=new LinkedHashMap<>();
-        //    1.1 Create a data structure that can contain all the given maps above
-
-        List<Map<String,String>> scrumTeams =new ArrayList<>();
-        scrumTeams.add(scrumTeam1);
-        scrumTeams.add(scrumTeam2);
-        scrumTeams.addAll(Arrays.asList(scrumTeam3,scrumTeam4,scrumTeam5));
-
-        System.out.println("scrumTeam = " + scrumTeams);
-        System.out.println("scrumTeam = " + scrumTeams.size());
-
-        // print the names of all employees:
-
-        for (Map<String, String> eachScrumTeam : scrumTeams) {
-            for (Map.Entry<String, String> pair : eachScrumTeam.entrySet()) {
-                System.out.println(pair.getKey()+" : "+pair.getValue());
-            }
-
-            System.out.println("eachScrumTeam = " + eachScrumTeam);
-        }
+        Map<String, String>[]  array = new Map[5];
+        array[0] = scrumTeam1;
+        array[1] = scrumTeam2;
+        array[2] = scrumTeam3;
+        array[3] = scrumTeam4;
+        array[4] = scrumTeam5;
 
 
-        System.out.println("------------------------------");
-
-        //  1.2 Print the names of all scrum masters
-
-        for (Map<String, String> eachScrumTeam : scrumTeams){
-
-            /*
-
-            for (String name : eachScrumTeam.keySet()) {
-
-                if(eachScrumTeam.get(name).equals("SM")){
-
-                    System.out.println("name = " + name);
-                }
-
-             */
-            for (Map.Entry<String, String> pair : eachScrumTeam.entrySet()) {
-                if(pair.getValue().equals("SM")){
-                    System.out.println("Scrum Masters = " + pair.getKey());
-                }
-            }
-        }
-
-
-
-
-
-
-
-        //    1.3 Print the names of all Developers
+        System.out.println(Arrays.toString(array));
+        System.out.println(array.length);
 
 
 
