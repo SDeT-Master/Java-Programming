@@ -9,7 +9,7 @@ public class FullName {
         String firstName="Enver";
         String lastName="Sayim";
 
-        int age=26;
+        int age= 26;
         int salary=323_402;
 
         String jobTitle="JavaSdet";

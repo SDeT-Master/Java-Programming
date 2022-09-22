@@ -31,7 +31,7 @@ public class AToZ {
 
         System.out.println("-------------------------------------------");
 
-       for(char i=1; i<=40000; i++){
+       for(char i=1; i<=101; i++){
 
            System.out.print(i+" ");
         }

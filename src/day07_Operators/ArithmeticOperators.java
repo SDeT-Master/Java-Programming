@@ -6,9 +6,9 @@ public class ArithmeticOperators {
     public static void main(String[] args) {
         
         
-        int num1=10;
+        int num1=21;
         
-        int num2=3;
+        int num2=7;
 
 
         int division=num1/num2;  // Division variable gives me the result of num1/num2

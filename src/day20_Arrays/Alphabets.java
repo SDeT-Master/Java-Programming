@@ -10,6 +10,7 @@ public class Alphabets {
 
 
 
+
         /*
         alphabet[0]='Z';
         alphabet[1]='Y';
@@ -24,5 +25,10 @@ public class Alphabets {
         }
 
         System.out.println(Arrays.toString(alphabet));
+    }
+
+    public void alphabet(){
+
+
     }
 }

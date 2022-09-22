@@ -6,11 +6,11 @@ public class AgeGroup {
     public static void main(String[] args) {
 
 
-        double age=22;
+        double age=100;
 
         String result="";
 
-        if(age>=0 && age<=85){
+        if(age>=0 && age<=100){
             if(age>=0 && age<=2){
                 result="Infant";
             }

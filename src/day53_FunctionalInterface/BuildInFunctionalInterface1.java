@@ -90,8 +90,20 @@ public class BuildInFunctionalInterface1 {
         System.out.println("------------------------------------------");
 
 
+        Function<List <Integer>, int []> convertToArray= (a)->{
 
+            int[] result= new int[a.size()];
 
+            for (int i = 0; i < a.size(); i++) {
+
+               result[i]= a.get(i);
+            }
+            return result;
+        };
+
+        List<Integer> numbers=new ArrayList<>(Arrays.asList(1,2,3,4,5,6));
+        int[] result2= convertToArray.apply(numbers);
+        System.out.println(Arrays.toString(result2));
 
     }
 
