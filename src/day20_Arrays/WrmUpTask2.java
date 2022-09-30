@@ -11,7 +11,6 @@ public class WrmUpTask2 {
         for (int i = 0; i < 101; i++) {
             nums[i]=i;
         }
-        System.out.println(Arrays.toString(nums));
 
         for (int i = nums.length-1, j=0; i >=0 ;j++, i--) {
             reversedNums[j]=nums[i];
